@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/xsl" href="vorlesung.xsl"?>
 <!DOCTYPE Vorlesung SYSTEM "VLML_neu.dtd">
+<?xml-stylesheet type="text/xsl" href="vorlesung.xsl"?>
 <!-- Ein Beispiel Dokument zur Veranstaltung Internettechnolgien!
  Autor: Khelil
  Wie alles ist auch dieser Kommentar endlich!-->

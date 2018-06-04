@@ -19,15 +19,20 @@
             <xsl:element name="li">
               <xsl:value-of select="Name"/>
                 <xsl:element name="ul">
-                <xsl:for-each select="idref(Q1)">
-                  <h1>found!!!</h1>
-                </xsl:for-each>
+                  <xsl:if test="@quelle">
+                  <xsl:element name="h5">
+                  Dazugehörige Quelle: <br/>
+                  </xsl:element>
+                  <xsl:variable name="qID" select="@quelle"/>
+                  Autor: <xsl:value-of select="/Vorlesung/Quelle[@quellenID = $qID]/Autor"/><br/>
+                  Titel: <xsl:value-of select="/Vorlesung/Quelle[@quellenID = $qID]/Titel"/>
+                </xsl:if>
               </xsl:element>
             </xsl:element>
           </xsl:element>
         </xsl:for-each>
       </p>
-    </body> 
+    </body>
   </html>
 </xsl:template>
 </xsl:stylesheet>
