@@ -19,15 +19,15 @@
             <xsl:element name="li">
               <xsl:value-of select="Name"/>
                 <xsl:element name="ul">
-                <xsl:for-each select="idref(Q1)">
+<!--                <xsl:for-each select="idref(Q1)">
                   <h1>found!!!</h1>
-                </xsl:for-each>
+                </xsl:for-each> -->
               </xsl:element>
             </xsl:element>
           </xsl:element>
         </xsl:for-each>
       </p>
-    </body> 
+    </body>
   </html>
 </xsl:template>
 </xsl:stylesheet>
