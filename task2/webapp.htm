@@ -3,26 +3,130 @@
 	<head>
 		<title>My WebApp</title>
 		<link rel="stylesheet" type="text/css" href="pagecontainer.css">
+		
+		
+		
+		
+		
 	</head>
 	<body>
 		<header>
+			<nav>
+				<table>
+				<tr>
+					<th></th><th></th>
+				</tr>
+				<tr>
+					<td><a href="webapp.htm">Main</a></td>
+					<td><a href="convert.htm">Euro to Dollar converter</a></td>
+				</tr>
+				</table>
+			</nav>
 			<h1>My Info Broker</h1>
 		</header>
-		<div class="col-container">
-			<nav class="col">
-				<ul>
-					<li><a href="#">Main</a></li>
-					<li><a href="converter.htm">Euro to Dollar converter</a></li>
-				</ul>
-			</nav>
-			<div class="col">
+			<body>
+			
 				<h1>Here is the place where you can add and delete Tasks to your Todolist</h1>
 				<p>
 					Standing on the River Thames. London has been amajor settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium
 				</p>
-			</div>
-		</div>
-		<footer>Copyright &copy; KKreitmair</footer>
+			<table id="todo">
+				<tr>
+					<th>Aufgabe</th><th>Stand</th><th>delete</th><th>Set to DONE</th>
+				</tr>
+				<tr>
+					<td>Prakitkum Compiler</td><td class="state">DONE</td><td><button class="close">DELETE</button></td><td><button class="done">DONE</button></td>
+				</tr>
+				´<tr>
+					<td>Prakitkum Internettechnologie</td><td class="state">OPEN</td><td><button class="close">DELETE</button></td><td><button class="done">DONE</button></td>
+				</tr>
+				
+				
+			
+				
+			<table>
+			
+			
+			
+			<input type="text" id="myInput" placeholder="Aufgabentitel">
+			<span onclick="newElement()" class="addBtn">Add</span>
+			<button onclick="newElement()">Add2</button>
+		
+			<script>
+				alert("Hello");
+				var close = document.getElementsByClassName("close");
+				var i;
+				for (i = 0; i < close.length; i++) {
+					
+					close[i].onclick = function() {
+					alert("delete");
+					var div = this.parentElement.parentElement;
+					div.style.display = "none";
+					}
+				}
+				
+				
+				var close = document.getElementsByClassName("done");
+				var i;
+				for (i = 0; i < close.length; i++) {
+					
+					close[i].onclick = function() {
+					alert("done");
+					var div = this.parentElement.parentElement.getElementsByClassName("state");
+					div[0].innerHTML ="DONE";
+					}
+				}
+				
+				
+			
+			function newElement() {
+				var inputValue = document.getElementById("myInput").value;
+				var row = document.getElementById("todo").insertRow(1);
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				var cell3 = row.insertCell(2);
+				var cell4 = row.insertCell(3);
+                cell1.innerHTML = inputValue; // content
+                cell2.innerHTML = "OPEN";
+				cell2.className= "state";
+                cell3.innerHTML = "<button class=\"close\" onclick=\"delete()\">DELETE</button>";
+				cell4.innerHTML = "<button class=\"done\">DONE</button>";
+			
+				var close = document.getElementsByClassName("close");
+				var i;
+				for (i = 0; i < close.length; i++) {
+					
+					close[i].onclick = function() {
+					alert("delete");
+					var div = this.parentElement.parentElement;
+					div.style.display = "none";
+					}
+				}
+				
+				
+				var close = document.getElementsByClassName("done");
+				var i;
+				for (i = 0; i < close.length; i++) {
+					
+					close[i].onclick = function() {
+					alert("done");
+					var div = this.parentElement.parentElement.getElementsByClassName("state");
+					div[0].innerHTML ="DONE";
+					}
+				}
+			}
+
+		
+		</script>
+		</body>
+		<footer>Copyright &copy; KKreitmair/ DKrueg</footer>
 		</div>
 	</body>
+	
+	
+	
+	
+	
+	
+	
 </html>
