@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Vorlesung SYSTEM "VLML_neu.dtd">
+<!-- Ein Beispiel Dokument zur Veranstaltung Internettechnolgien!
+ Autor: Khelil
+ Wie alles ist auch dieser Kommentar endlich!-->
+<Vorlesung>
+    <Titel>IT-Sicherheit</Titel>
+    <Hochschule>HAW Landshut</Hochschule>
+    <Hochschule>OTH Regensburg</Hochschule>
+    <!-- Hochschul Tag hinzugetügt -->
+    <SWS>2</SWS>
+    <!-- Semester Tag nach unten verschoben -->
+    <Semester>Sommersemester</Semester>
+    <?myTool align=left?> <!-- Anweisung an myTool-->
+    <Kapitel nummer="1" quelle="Q1">
+        <Name>Risiken</Name>
+        <Termin>1</Termin>
+    </Kapitel>
+    <Kapitel nummer="2" quelle="Q2">
+        <Name>Kryptographie</Name>
+        <Termin>2</Termin>
+        <Termin>3</Termin>
+        <Termin>4</Termin>
+        <Termin>5</Termin>
+        <Termin>6</Termin>
+    </Kapitel>
+    <!-- Quellenangabe Attribut hinzugefügt -->
+    <Kapitel nummer="3" quelle="Q2">
+        <Name>Key Management</Name>
+        <Termin>7</Termin>
+        <Termin>8</Termin>
+        <Termin>9</Termin>
+        <Termin>10</Termin>
+    </Kapitel>
+    <!-- Bewertungs Attribut hinzugefügt -->
+    <Kapitel nummer="4" quelle="Q1" bewertung="10">
+        <Name>PKI</Name>
+        <Termin>11</Termin>
+        <Termin>12</Termin>
+        <Termin>13</Termin>
+        <Termin>14</Termin>
+    </Kapitel>
+    <!-- Artikel Tag hinzugefügt -->
+    <Quelle quellenID="Q1">
+        <Autor>Claudia Eckert</Autor>
+        <Titel>IT-Sicherheit</Titel>
+        <Artikel>BlaBlub</Artikel>
+    </Quelle>
+    <!-- Dissertation Tag hinzugefügt -->
+    <Quelle quellenID="Q2">
+        <Autor>Bruce Schneider</Autor>
+        <Titel>Angewandte Kryptographie</Titel>
+        <Dissertation>BlaBlub</Dissertation>
+    </Quelle>
+</Vorlesung>

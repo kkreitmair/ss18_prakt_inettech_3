@@ -1,0 +1,42 @@
+body {
+	width: 100%;
+	margin: 0;
+}
+header, footer {
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	padding: 1em;
+	color: white;
+	clear: left;
+}
+nav {
+	max-width: 260px;
+	padding: 1%;
+	background-color: #80808080;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	padding: 1%;
+	background-color: #78ed78;
+}
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+nav li {
+	margin: 5%;
+	width: 210px;
+}
+body div {
+	overflow: hidden;
+}
+.col-container{
+	display: table;
+	width: 100%;
+}
+.col{
+	display: table-cell;
+}

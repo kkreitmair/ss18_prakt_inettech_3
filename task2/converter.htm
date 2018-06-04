@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My WebApp Converter</title>
+		<link rel="stylesheet" type="text/css" href="pagecontainer.css">
+		<script>
+			function euroconverter(valNum){
+				document.getElementById("outputDollars").innerHTML = (valNum * 1.1627).toPrecision(3);
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>My Info Broker</h1>
+		</header>
+		<div class="col-container">
+			<nav class="col">
+				<ul>
+					<li><a href="webapp.htm">Main</a></li>
+					<li><a href="#">Euro to Dollar converter</a></li>
+				</ul>
+			</nav>
+			<div class="col">
+				<p>
+					<label>Euro</label>
+					<input id="inputEuro" type="number" min="0" placeholder="Euro" oninput="euroconverter(this.value)" onchange="euroconverter(this.value)">
+				</p>
+				<p>Dollars: <span id="outputDollars"></span></p>
+			</div>
+		</div>
+		<footer>Copyright &copy; KKreitmair</footer>
+	</body>
+</html>
